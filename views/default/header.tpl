@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
   </head>
   <body>
 
@@ -36,7 +39,7 @@
           <input class="search-form__input form-control mr-sm-2 position-absolute" type="text" name="search" placeholder="Искать">
         </form> -->
 
-        <form class="search-form form-inline position-absolute">
+        <form class="search-form form-inline position-absolute" action="index.php">
           <button class="search-form__btn btn my-sm-0" type="submit">Search</button>
           <input class="search-form__input form-control mr-sm-2 position-absolute" type="text" name="search" placeholder="Искать">
         </form>
@@ -96,7 +99,7 @@
                 <p class="m-0 p-0"><span class="header-descr__date">27</span> <span>July</span> 2018</p>
               </div>
               <div class="col-6 m-0 p-0 row justify-content-center">
-                <button>Date converter</button>
+                <button class="btn btn_capitalize date-converter__button" data-toggle="modal" data-target=".date-converter">Date converter</button>
               </div>
               <div class="col-3 m-0 p-0">
                 <p class="m-0 p-0"><span class="header-descr__date">15</span> <span>Ava</span> 2018</p>

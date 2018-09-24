@@ -41,9 +41,21 @@ function indexAction($smarty, $db) {
         loadTemplate($smarty, 'allNews');
     } else if ($catId == 4) {
         loadTemplate($smarty, 'announcementAll');
+    } else if ($catId == 12) {
+        loadTemplate($smarty, 'allNewsTittle');
     } else if ($catId == 16) {
-        loadTemplate($smarty, 'makeAPayment');
+        loadTemplate($smarty, 'photoAlbum');
     } else if ($catId == 17) {
+        loadTemplate($smarty, 'videoAlbum');
+    } else if ($catId == 18) {
+        loadTemplate($smarty, 'calendar');
+    } else if ($catId == 19) {
+        loadTemplate($smarty, 'candleLight');
+    } else if ($catId == 20) {
+        loadTemplate($smarty, 'donatePay');
+    } else if ($catId == 21) {
+        loadTemplate($smarty, 'makeAPayment');
+    } else if ($catId == 22) {
         loadTemplate($smarty, 'paymentPolicy');
     }
     loadTemplate($smarty, 'footer');

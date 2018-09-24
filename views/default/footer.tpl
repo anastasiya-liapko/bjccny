@@ -39,7 +39,111 @@
     <!-- footer -->
 
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+  <div class="modal date-converter" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content shadow">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="img/date-converter-modal-close.svg"></span>
+          </button>
+        </div>
+        <div class="modal-body p-0 pl-5 pr-5">
+          <p class="title text-left">Date converter</p>
+          <p class="descr text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <form>
+
+            <div class="row m-0 justify-content-between select-wrapper">
+              <select class="p-0 select select_day select_short mb-2 mb-sm-0" name="day" id="day">
+                <option class="text-center" value="">01</option>
+                <option class="text-center" value="">02</option>
+                <option class="text-center" value="">03</option>
+              </select>
+              <select class="col-12 col-sm p-0 ml-sm-4 mr-sm-4 mb-2 mb-sm-0 select select_month select_long" name="month" id="month">
+                <option class="text-center" value="">January</option>
+                <option class="text-center" value="">March</option>
+                <option class="text-center" value="">February</option>
+              </select>
+              <select class="p-0 select select_year select_short" name="year" id="year">
+                <option class="text-center" value="">2018</option>
+              </select>
+            </div>
+
+            <div class="row justify-content-center">
+              <button class="btn btn-convert mt-3 mb-3" type="button">Convert</button>
+            </div>
+
+            <div class="row m-0 justify-content-between select-wrapper">
+              <select class="select select_day-converted select_short mb-2 mb-sm-0" name="day-converted" id="day-converted">
+                <option class="text-center" value="">01</option>
+                <option class="text-center" value="">02</option>
+                <option class="text-center" value="">03</option>
+              </select>
+              <select class="col-12 col-sm p-0 ml-sm-4 mr-sm-4 mb-2 mb-sm-0 select select_month-converted select_long" name="month-converted" id="month-converted">
+                <option class="text-center" value="">Tishrei</option>
+                <option class="text-center" value="">Tishrei</option>
+                <option class="text-center" value="">Tishrei</option>
+              </select>
+              <select class="select select_year-converted select_short mb-2 mb-sm-0" name="year-converted" id="year-converted">
+                <option class="text-center" value="">5778</option>
+              </select>
+            </div>
+
+          </form>
+        </div>
+        <!-- modal-body -->
+        <div class="modal-footer justify-content-center pl-5 pr-5">
+          <a class="btn btn_green btn_capitalize mt-3 mb-4">View date on calendar</a>
+        </div>
+        <!-- modal-footer -->
+      </div>
+    </div>
+  </div>
+  <!-- modal converter -->
+
+  <div class="modal photo-gallery" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content shadow">
+        <!-- <div class="modal-header p-0">
+          
+        </div> -->
+        <div class="modal-body p-0">
+          
+          <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="img/modal-close-grey.svg"></span>
+            </button>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/rectangle-00.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/rectangle-13.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/rectangle-14.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev control control_prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next control control_next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        
+        </div>
+        <!-- modal-body -->
+        
+      </div>
+    </div>
+  </div>
+  <!-- modal gallery -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -47,6 +151,9 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
   <script src="js/swiper.js"></script>
+
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/formstyler.js"></script>
   
   </body>
 

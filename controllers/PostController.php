@@ -44,8 +44,12 @@ function indexAction($smarty, $db) {
       loadTemplate($smarty, 'newsIn');
     } else if ($rsPost[0]['category_id'] == 4) {
       loadTemplate($smarty, 'announcement');
-    } else if ($rsPost[0]['category_id'] == 16) {
-      loadTemplate($smarty, 'donatePay');
+    } else if ($rsPost[0]['category_id'] == 21) {
+      loadTemplate($smarty, 'donatePayIn');
+    } else if ($rsPost[0]['category_id'] == 2 
+            || $rsPost[0]['category_id'] == 3
+            || $rsPost[0]['category_id'] == 5) {
+      loadTemplate($smarty, 'statia');
     }
     loadTemplate($smarty, 'footer');
 }

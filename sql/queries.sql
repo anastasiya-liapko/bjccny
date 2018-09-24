@@ -1,60 +1,102 @@
 INSERT INTO `categories` (`parent_id`, `name`) VALUES
-    (0, "Home"),
-    (0, "About"),
-    (0, "Service time"),
-    (0, "Announcements"),
-    (0, "Life cycle"),
-    (0, "Learning"),
-    (0, "Gallery"),
-    (0, "Whats\'on"),
-    (0, "Payments"),
-    (0, "Youth"),
-    (5, "Birth(Brit)"),
-    (5, "Bar Mitzvah"),
-    (5, "Pidyon"),
-    (5, "Wedding"),
-    (5, "Mourning"),
-    (9, "Make a payment"),
-    (9, "Payment policy");
+    (0, "Home"), -- 1
+    (0, "About"), -- 2
+    (0, "Service time"), -- 3
+    (0, "Announcements"), -- 4
+    (0, "Life cycle"), -- 5
+    (0, "Learning"), -- 6
+    (0, "Gallery"), -- 7
+    (0, "Whats\'on"), -- 8
+    (0, "Payments"), -- 9
+    (0, "Youth"), -- 10
+    (5, "Birth(Brit)"), -- 11
+    (5, "Bar Mitzvah"), -- 12
+    (5, "Pidyon"), -- 13
+    (5, "Wedding"), -- 14
+    (5, "Mourning"), -- 15
+    (7, "Photo album"), -- 16
+    (7, "Video album"), -- 17
+    (8, "Calendar"), -- 18
+    (8, "Candle light"), -- 19
+    (9, "Donate pay"), -- 20
+    (9, "Make a payment"), -- 21
+    (9, "Payment policy"); -- 22
 
 INSERT INTO `posts` (`category_id`, `date`, `name`, `description`, `status`) VALUES
+    -- 1
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 2
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 3
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 4
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 5
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 6
     (1, '2018-03-03', 'Scientists May Have Discovered A New State Of Liquid Water', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 7
     (1, '2018-03-03', 'Time Crystals: How Scientists Created A New State Of Matter', 'Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 8
     (2, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 9
     (2, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 10
     (3, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 11
     (3, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 12
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 13
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 14
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 15
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 16
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 17
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 18
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 19
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 20
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 21
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 22
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 23
     (4, NULL, 'Time Crystals: How Scientists Created A New State Of Matter','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 24
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 25
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 26
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 27
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 28
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
+    -- 29
     (5, '2017-03-22', 'Missing Galaxies Might Be Found By Studying The Ultraviolet','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad', 1),
-    (16, NULL, 'Tittle of donation','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (16, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
-    (17, NULL, 'Payment Policy', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1);
+    -- 30
+    (21, NULL, 'Tittle of donation','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1),
+    -- 31
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 32
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 33
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 34
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 35
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 36
+    (21, NULL, 'Tittle','Scientists say they have found a strange transition state in liquid water. The findings were published in the International Journal of Nanotechnology.The findings were published in the International Journal of Nanotechnology.', 1),
+    -- 37
+    (22, NULL, 'Payment Policy', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,', 1);
 
 INSERT INTO `tags` (`post_id`, `name`) VALUES
     (1, '#Lorem'),
@@ -93,13 +135,13 @@ INSERT INTO `images` (`post_id`, `image`, `image_2x`, `image_3x`, `preview_image
     (27, NULL, NULL, NULL, 'rectangle-14.png', 'rectangle-14@2x.png', 'rectangle-14@3x.png'),
     (28, NULL, NULL, NULL, 'rectangle-14.png', 'rectangle-14@2x.png', 'rectangle-14@3x.png'),
     (29, NULL, NULL, NULL, 'rectangle-14.png', 'rectangle-14@2x.png', 'rectangle-14@3x.png'),
-    (30, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (31, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (32, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (33, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (34, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (35, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
-    (36, 'rectangle-donation.png', 'rectangle-donation@2x.png', 'rectangle-donation@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png');
+    (30, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (31, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (32, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (33, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (34, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (35, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png'),
+    (36, 'donate-pay-in.png', 'donate-pay-in@2x.png', 'donate-pay-in@3x.png', 'rectangle-payment.png', 'rectangle-payment@2x.png', 'rectangle-payment@3x.png');
 
 INSERT INTO `gallery_images` (`post_id`, `gallery_image_1`, `gallery_image_1_2x`, `gallery_image_1_3x`, `gallery_image_2`, `gallery_image_2_2x`, `gallery_image_2_3x`, `gallery_image_3`, `gallery_image_3_2x`, `gallery_image_3_3x`) VALUES
     (30, 'rectangle-donate-1.png', 'rectangle-donate-1@2x.png', 'rectangle-donate-1@3x.png', 'rectangle-donate-2.png', 'rectangle-donate-2@2x.png', 'rectangle-donate-2@3x.png', 'rectangle-donate-3.png', 'rectangle-donate-3@2x.png', 'rectangle-donate-3@3x.png'),
