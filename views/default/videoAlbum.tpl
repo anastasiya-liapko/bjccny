@@ -74,80 +74,128 @@
 
         <p class="album__title mt-4 mb-4">Subtittle</p>
 
-        <div class="row m-0 justify-content-between">
+        <div class="content row m-0 justify-content-between">
           
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
          
         </div>
         <!-- subtitle -->
 
         <p class="album__title mt-2 mb-4">Subtittle</p>
 
-        <div class="row m-0 mb-4 justify-content-between">
+        <div class="content row m-0 mb-4 justify-content-between">
           
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
-          <a href="#" class="album__element album__element_button col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
+          <div class="album__element album__element_button col-12 col-md-6 pr-md-4 col-lg-3 p-0 m-0 mb-4">
+            <a href="#" class="p-0 album__element_link">
+              <span class="icon-play-button"></span>
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
+            </a>
+          </div>
          
         </div>
         <!-- subtitle -->

@@ -31,7 +31,7 @@
         </div>
 
         <form class="form-inline justify-content-between" action="#">
-          <div class="col-12 col-lg-6 row p-0 m-0 justify-content-between">
+          <div class="pick-sum col-12 col-lg-6 row p-0 m-0 justify-content-between">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="18$">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="36$">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="72$">
@@ -48,7 +48,7 @@
           </div>
         </form>
         <form class="form-inline justify-content-between" action="#">
-          <div class="col-12 col-lg-6 row p-0 m-0 justify-content-between">
+          <div class="pick-sum col-12 col-lg-6 row p-0 m-0 justify-content-between">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="18$">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="36$">
             <input class="input input_square col mr-2 mb-2 mb-lg-0" type="button" name="sum" value="72$">
@@ -83,25 +83,37 @@
         </div>
 
         <div class="social row justify-content-center align-items-center m-0">
-          <a class="google" href="#">Google</a>
-          <a class="facebook" href="#">Facebook</a>
-          <a class="instagram" href="#">Instagram</a>
-          <a class="telegram" href="#">Telegram</a>
-          <a class="youtube" href="#">Youtube</a>
-          <a class="twitter" href="#">Twitter</a>
+          <a class="google icon-google" href="#">
+            <span>Google</span>
+          </a>
+          <a class="facebook icon-facebook" href="#">
+            <span>Facebook</span>
+          </a>
+          <a class="instagram icon-instagram" href="#">
+            <span>Instagram</span>
+          </a>
+          <a class="telegram icon-telegram" href="#">
+            <span>Telegram</span>
+          </a>
+          <a class="youtube icon-youtube" href="#">
+            <span>Youtube</span>
+          </a>
+          <a class="twitter icon-twitter" href="#">
+            <span>Twitter</span>
+          </a>
         </div>
 
       </div>
 
-      <div class="row m-0 posts mt-5 mb-5">
+      <div class="make-a-payment row m-0 posts mt-5 mb-5">
         {section name=post loop=2}
-        <div class="post col-12 col-lg-6 p-0 pr-lg-3 mb-4">
+        <div class="post col-12 col-lg-6 p-0 pr-lg-3 mb-4 mb-md-1">
           <a href="./?controller=post&id={$rsReadAlsoPosts[post].id}">
             <img class="float-left mb-3" src="img/{$rsReadAlsoPosts[post].preview_image}" srcset="img/{$rsReadAlsoPosts[post].preview_image_2x} 2x, img/{$rsReadAlsoPosts[post].preview_image_3x} 3x">
             <div class="text-center">
               <p class="secondary-posts__post-title text-left pl-2 pl-lg-0">{$rsReadAlsoPosts[post].name}</p>
-              <p class="secondary-posts__post-text text-left p-lg-0">{$rsReadAlsoPosts[post].description|truncate:225:"...":true}</p>
-              <div class="sum row text-left m-0 pl-2 pl-lg-0">
+              <p class="secondary-posts__post-text text-left pl-2 p-lg-0">{$rsReadAlsoPosts[post].description|truncate:225:"...":true}</p>
+              <div class="sum row text-left ml-0 mr-0 pl-2 pl-lg-0">
                 <span class="name col-6 p-0">Collected</span>
                 <span class="name col-6 p-0">Target</span>
               </div>

@@ -11,8 +11,8 @@
             <a href="./?controller=post&id={$rsPosts[post].id}">
               <img class="float-left mb-3" src="img/{$rsPosts[post].preview_image}" srcset="img/{$rsPosts[post].preview_image_2x} 2x, img/{$rsPosts[post].preview_image_3x} 3x">
               <div class="text-center">
-                <p class="secondary-posts__post-title text-left pl-2 pl-lg-0">{$rsPosts[post].name}</p>
-                <p class="secondary-posts__post-text text-left p-lg-0">{$rsPosts[post].description|truncate:225:"...":true}</p>
+                <p class="secondary-posts__post-title text-left pl-0">{$rsPosts[post].name}</p>
+                <p class="secondary-posts__post-text text-left p-0">{$rsPosts[post].description|truncate:225:"...":true}</p>
                 <a href="#" class="btn mb-5 mb-md-0">10$</a>
               </div>
             </a>

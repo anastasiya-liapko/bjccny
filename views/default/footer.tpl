@@ -21,9 +21,19 @@
         <!-- footer__lists -->
 
         <div class="footer__contacts row justify-content-center justify-content-sm-around m-sm-0">
-            <p class="footer__contacts-address col-7 col-sm-3 text-center"><span>New York, Adress 324324</span></p>
-            <p class="footer__contacts-mail col-7 col-sm-3 text-center"><span>default@mail.com</span></p>
-            <p class="footer__contacts-phone col-7 col-sm-3 text-center"><span>+329830282-00-0237</span></p>
+            <p class="footer__contacts-address col-7 col-sm-3 text-center">
+              <span class="label">New York, Adress 324324</span>
+            </p>
+            <p class="footer__contacts-mail col-7 col-sm-3 text-center">
+              <span class="label">
+                <a href="mailto:default@mail.com">default@mail.com</a>
+              </span>
+            </p>
+            <p class="footer__contacts-phone col-7 col-sm-3 text-center">
+              <span class="label">
+                <a href="tel: +329830282000237">+329830282-00-0237</a>
+              </span>
+            </p>
         </div>
         <!-- footer__contacts -->
 
@@ -45,7 +55,7 @@
       <div class="modal-content shadow">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><img src="img/date-converter-modal-close.svg"></span>
+            <span aria-hidden="true" class="icon-modal-close"></span>
           </button>
         </div>
         <div class="modal-body p-0 pl-5 pr-5">
@@ -55,6 +65,7 @@
 
             <div class="row m-0 justify-content-between select-wrapper">
               <select class="p-0 select select_day select_short mb-2 mb-sm-0" name="day" id="day">
+                <span style="z-index: 100;">1</span>
                 <option class="text-center" value="">01</option>
                 <option class="text-center" value="">02</option>
                 <option class="text-center" value="">03</option>
@@ -66,11 +77,16 @@
               </select>
               <select class="p-0 select select_year select_short" name="year" id="year">
                 <option class="text-center" value="">2018</option>
+                <option class="text-center" value="">2018</option>
+                <option class="text-center" value="">2018</option>
               </select>
             </div>
 
             <div class="row justify-content-center">
-              <button class="btn btn-convert mt-3 mb-3" type="button">Convert</button>
+              <button class="btn btn-convert mt-3 mb-3" type="button">
+                <span class="icon-refresh"></span>
+                <span class="label">Convert</span>
+              </button>
             </div>
 
             <div class="row m-0 justify-content-between select-wrapper">
@@ -85,6 +101,8 @@
                 <option class="text-center" value="">Tishrei</option>
               </select>
               <select class="select select_year-converted select_short mb-2 mb-sm-0" name="year-converted" id="year-converted">
+                <option class="text-center" value="">5778</option>
+                <option class="text-center" value="">5778</option>
                 <option class="text-center" value="">5778</option>
               </select>
             </div>
@@ -101,46 +119,79 @@
   </div>
   <!-- modal converter -->
 
-  <div class="modal photo-gallery" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content shadow">
-        <!-- <div class="modal-header p-0">
-          
-        </div> -->
-        <div class="modal-body p-0">
-          
-          <div id="carouselExampleControls" class="carousel" data-ride="carousel">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><img src="img/modal-close-grey.svg"></span>
-            </button>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="img/rectangle-00.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/rectangle-13.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/rectangle-14.png" alt="Third slide">
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+      <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
               </div>
             </div>
-            <a class="carousel-control-prev control control_prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next control control_next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-        
+          
         </div>
-        <!-- modal-body -->
-        
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div> 
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+        </div>
+
       </div>
     </div>
   </div>
-  <!-- modal gallery -->
+  <!-- modal pswp -->
+
+  <div class="modal search" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content shadow">
+        <div class="modal-header row">
+
+          <form class="search__form form-inline col-10" name="search-form" action="search-results.html">
+            <input class="search__form-input form-control mr-sm-2" type="text" name="search" placeholder="Искать">
+          </form>
+
+          <button type="button" class="close p-0 mr-3" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="icon-modal-close"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal search -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
@@ -154,7 +205,18 @@
 
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/formstyler.js"></script>
+
+  <script src="js/pickYear.js"></script>
+
+  <script src="photoSwipe/photoswipe.min.js"></script>
+  <script src="photoSwipe/photoswipe-ui-default.min.js"></script>
+
+  <script src="js/photoSwipe.js"></script>
   
+  <script src="js/calendar.js"></script>
+
+  <script src="js/switchActiveElements.js"></script>
+
   </body>
 
 </html>

@@ -5,7 +5,7 @@
 
       <p class="page-title d-block w-100 m-0 mt-5 mb-4">Life cycle</p>
       <div class="all-news-nav row justify-content-center m-0">
-        <a class="page-second-title mr-md-2 col-12 col-md-2 text-center active active_top-border" href="#">Bar Mitzvah</a>
+        <a class="page-second-title mr-md-2 col-12 col-md-3 text-center active active_top-border" href="#">Bar Mitzvah</a>
       </div>
 
       <div class="row secondary-posts">

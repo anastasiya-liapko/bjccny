@@ -21,12 +21,24 @@
         </p>
 
         <div class="social row justify-content-center align-items-center m-0">
-          <a class="google" href="#">Google</a>
-          <a class="facebook" href="#">Facebook</a>
-          <a class="instagram" href="#">Instagram</a>
-          <a class="telegram" href="#">Telegram</a>
-          <a class="youtube" href="#">Youtube</a>
-          <a class="twitter" href="#">Twitter</a>
+          <a class="google icon-google" href="#">
+            <span>Google</span>
+          </a>
+          <a class="facebook icon-facebook" href="#">
+            <span>Facebook</span>
+          </a>
+          <a class="instagram icon-instagram" href="#">
+            <span>Instagram</span>
+          </a>
+          <a class="telegram icon-telegram" href="#">
+            <span>Telegram</span>
+          </a>
+          <a class="youtube icon-youtube" href="#">
+            <span>Youtube</span>
+          </a>
+          <a class="twitter icon-twitter" href="#">
+            <span>Twitter</span>
+          </a>
         </div>
 
       </div>
@@ -35,21 +47,25 @@
 
         <p class="read-also m-0 pt-4 pb-4 text-left">Read also</p>
 
-        <div class="row justify-content-center m-0">
+        <div class="row justify-content-center m-lg-0">
           {section name=post loop=2}
-          <a href="./?controller=post&id={$rsReadAlsoPosts[post].id}" class="col-md-6 col-sm-12 col-12 main-posts__post">
-            <div>
-              <img src="img/{$rsReadAlsoPosts[post].preview_image}" srcset="img/{$rsReadAlsoPosts[post].preview_image_2x} 2x, img/{$rsReadAlsoPosts[post].preview_image_3x} 3x">
-              <p class="main-posts__post-title">{$rsReadAlsoPosts[post].name}</p>
-              <p class="main-posts__post-date">{$rsReadAlsoPosts[post].date|date_format:"%d | %m | %Y"}</p>
-            </div>
-            <p class="main-posts__post-tag pl-0">
-              {foreach $rsReadAlsoPosts[post].tags as $item}
-                <span class="tag">{$item['name']}</span>
-              {/foreach}
-            </p>
-            <p class="main-posts__post-text text-justify text-sm-left pl-0 pr-0">{$rsReadAlsoPosts[post].description}</p>
-          </a>
+          <div  class="col-md-6 col-sm-12 col-12 main-posts__post">
+            <a href="./?controller=post&id={$rsReadAlsoPosts[post].id}">
+              <div>
+                <img src="img/{$rsReadAlsoPosts[post].preview_image}" srcset="img/{$rsReadAlsoPosts[post].preview_image_2x} 2x, img/{$rsReadAlsoPosts[post].preview_image_3x} 3x">
+                <p class="main-posts__post-title">{$rsReadAlsoPosts[post].name}</p>
+                <p class="main-posts__post-date">{$rsReadAlsoPosts[post].date|date_format:"%d | %m | %Y"}</p>
+              </div>
+              <div>
+                <p class="main-posts__post-tag">
+                  {foreach $rsReadAlsoPosts[post].tags as $item}
+                    <span class="tag">{$item['name']}</span>
+                  {/foreach}
+                </p>
+                <p class="main-posts__post-text text-justify text-sm-left">{$rsReadAlsoPosts[post].description}</p>
+              </div>
+            </a>
+          </div>
           {/section}
         </div>
 

@@ -9,7 +9,6 @@ function Calendar2(id, year, month) {
       DNfirst = DNfirst + 1,
       calendar = '<tr>',
       month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
-  console.log(new Date().getDate());
 
   if (DNfirst != 0) {
     for (var i = DlastPrev - DNfirst + 2; i <= DlastPrev; i++) calendar += '<td class="disabled"><span class="d-block mb-0 mb-sm-2 mt-2">' + i + '</span><span class="text-green">15 Ава</span>';

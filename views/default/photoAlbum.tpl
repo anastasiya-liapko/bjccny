@@ -5,112 +5,143 @@
 
       <p class="page-title d-block w-100 m-0 mt-5">Category tittle</p>
       
-      <div class="pagination row justify-content-end m-0">
-        <div class="pagination__year text-center col-12 col-sm-10">
-          <a href="#" class="mr-4 mr-sm-5 align-middle">2016</a>
-          <a href="#" class="active align-middle">2017</a>
-          <a href="#" class="ml-4 ml-sm-5 align-middle">2018</a>
+      <div class="pagination row justify-content-end">
+        <div class="pagination__year text-center col-11 col-sm-10">
+          <a href="photo-album.html" id="prevYear" class="mr-4 mr-sm-5 align-middle"></a>
+          <a href="photo-album.html" id="pickedYear" class="active align-middle"></a>
+          <a href="photo-album.html" id="nextYear" class="ml-4 ml-sm-5 align-middle"></a>
         </div>
-        <div class="pagination__buttons text-right d-none d-sm-block col-1">
-          <a href="#" class="prev">Previous</a>
-          <a href="#" class="next">Next</a>
+         
+        <div class="pagination__buttons text-right col-1">
+          <button class="prev pagination__prev icon-prev" type="button"><span>Previous</span></button>
+          <button class="next pagination__next icon-next" type="button"><span>Next</span></button>
         </div>
-        
-
       </div>
 
-      <div class="row album m-0">
+      <div class="my-gallery row album m-0">
 
-        <p class="album__title mt-4 mb-4">2018</p>
+        <p class="album__title album__title-first mt-4 mb-4"></p>
 
-        <div class="row m-0 justify-content-between">
-          
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+        <div class="picture picture-2018 cf row m-0 justify-content-between" itemscope itemtype="http://schema.org/ImageGallery">
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-14@3x.png" itemprop="contentUrl" data-size="220x165">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-14.png" srcset="img/rectangle-14@2x.png 2x, img/rectangle-14@3x.png 3x" width="220px" height="165px" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13@3x.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-15@3x.png" itemprop="contentUrl" data-size="500x300">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-15.png" srcset="img/rectangle-15@2x.png 2x, img/rectangle-15@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
+
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
          
         </div>
         <!-- subtitle -->
 
-        <p class="album__title mt-2 mb-4">2017</p>
+        <p class="album__title album__title-second mt-2 mb-4"></p>
 
-        <div class="row m-0 mb-4 justify-content-between">
+        <div class="picture picture-2017 row m-0 mb-4 justify-content-between" itemscope itemtype="http://schema.org/ImageGallery">
           
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
 
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
           
-          <a href="#" class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" data-toggle="modal" data-target=".photo-gallery">
-            <p class="album__element-title m-4">Album tittle</p>
-            <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x">
-          </a>
+          <figure class="album__element col-12 col-md-6 col-lg-3 p-0 mb-4 pr-md-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/rectangle-13.png" itemprop="contentUrl" data-size="1000x667">
+              <p class="album__element-title m-4">Album tittle</p>
+              <img src="img/rectangle-13.png" srcset="img/rectangle-13@2x.png 2x, img/rectangle-13@3x.png 3x" itemprop="thumbnail" alt="">
+            </a>
+          </figure>
          
         </div>
         <!-- subtitle -->
